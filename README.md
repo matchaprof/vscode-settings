@@ -4,7 +4,7 @@ Find my settings for VSCode below (some settings inspired by <a href="https://yo
 
 ## How it looks
 
-![screenshot-1](vscode-screenshot.jpg)
+![vscode-screenshot](vscode-ss.jpg)
 
 # Font and Cursor
 
