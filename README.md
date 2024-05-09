@@ -69,3 +69,54 @@ Check my `settings.json` for compatibility using multiple formatters.
 - <a href="https://github.com/akamud/vscode-theme-onedark" target="_blank">Atom One Dark Theme</a>
 - <a href="https://github.com/guilhermerodz/omni-owl" target="_blank">Omini Owl Theme</a>
 - <a href="https://github.com/ahmadawais/shades-of-purple-vscode" target="_blank">Shades of Purple Theme</a>
+
+# settings.json
+
+```
+{
+  // Global settings
+  "editor.wordWrap": "on",
+  "workbench.settings.applyToAllProfiles": [
+    "editor.fontFamily",
+    "editor.fontSize",
+    "glassit.alpha"
+  ],
+  "liveServer.settings.donotShowInfoMsg": true,
+  "cSpell.enabled": false,
+
+  // Shows folder trees rather than compacting them inline
+  "explorer.compactFolders": false,
+
+  // Font Settings
+  "editor.fontSize": 16,
+  "editor.fontFamily": "'cascadia code'",
+  // Other preferred fonts for my reference
+  // "editor.fontFamily": "Consolas, 'Courier New', monospace"
+
+  // Cursor Settings
+  "editor.cursorWidth": 3,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.multiCursorModifier": "ctrlCmd",
+
+  // Appearance and Themes
+  "workbench.colorTheme": "Ayu Dark",
+  "workbench.iconTheme": "vscode-icons",
+  "glassit.alpha": 230,
+  "editor.guides.bracketPairs": "active",
+
+  // Formatter used globally in VSCode
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Formatter specifically for HTML
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+
+  // Formatter specifically for CSS
+  "[css]": {
+    "editor.defaultFormatter": "michelemelluso.code-beautifier"
+  }
+}
+```
