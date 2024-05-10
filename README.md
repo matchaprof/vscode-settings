@@ -28,8 +28,6 @@ Check my `settings.json` for compatibility using multiple formatters.
 
 - <a href="https://github.com/mike7515/code-beautifier" target="_blank">Beautify</a> <br>Formats CSS code nicely after saving (Ctrl + S).
 
-- <a href="https://github.com/formulahendry/vscode-auto-rename-tag" target="_blank">Auto Rename Tag</a> <br>Automatically renames paired HTML/XML tag
-
 - <a href="https://github.com/xabikos/vscode-javascript" target="_blank">JavaScript (ES6) code snippets</a> <br>Code snippets for JavaScript in ES6 syntax (supports both JavaScript and TypeScript).
 
 - <a href="https://github.com/solnurkarim/HTML-to-CSS-autocompletion" target="_blank">HTML To CSS Autocompletion</a> <br>Provides completion suggestions for classes and ids from markup documents to stylesheets.
@@ -90,6 +88,7 @@ Queries, TODOs, Highlights, commented out code can also be styled to make it cle
   ],
   "liveServer.settings.donotShowInfoMsg": true,
   "cSpell.enabled": false,
+  "editor.linkedEditing": true,
 
   // Shows folder trees rather than compacting them inline
   "explorer.compactFolders": false,
@@ -124,7 +123,58 @@ Queries, TODOs, Highlights, commented out code can also be styled to make it cle
   // Formatter specifically for CSS
   "[css]": {
     "editor.defaultFormatter": "michelemelluso.code-beautifier"
-  }
+  },
+
+  // Better Comments settings
+  "better-comments.multilineComments": true,
+  "better-comments.highlightPlainText": true,
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ]
 }
 ```
 
