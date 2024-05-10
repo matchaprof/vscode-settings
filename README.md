@@ -24,7 +24,7 @@ Search for **"Cursor"** in VSCode settings and change the following:
 
 ### Formatting Help
 Check my `settings.json` for compatibility using multiple formatters.
-- <a href="https://github.com/prettier/prettier-vscode" target="_blank">Prettier - Code formatter</a> <br>Formats code by enforcing a consistent style by parsing your code and re-printing it with its own rules.
+- <a href="https://github.com/prettier/prettier-vscode" target="_blank">Prettier - Code formatter</a> <br>Formats code by enforcing a consistent style by parsing your code and re-printing it with its own rules (Ctrl + S).
 
 - <a href="https://github.com/mike7515/code-beautifier" target="_blank">Beautify</a> <br>Formats CSS code nicely after saving (Ctrl + S).
 
@@ -43,7 +43,9 @@ Queries, TODOs, Highlights, commented out code can also be styled to make it cle
 
 - <a href="https://github.com/enyancc/vscode-ext-color-highlight" target="_blank">Color Highlight</a> <br>Styles CSS/Web colors found in your document.
 
-- <a href="https://github.com/streetsidesoftware/vscode-spell-checker" target="_blank">Code Spell Checker</a> <br>Spell checker to help catch common spelling errors in code
+- <a href="https://github.com/antiantisepticeye/vscode-color-picker" target="_blank">vscode-color-picker</a> <br>A simple color picker for vscode that lets you use the default css color picker in other documents.
+
+- <a href="https://github.com/streetsidesoftware/vscode-spell-checker" target="_blank">Code Spell Checker</a> <br>Spell checker to help catch common spelling errors in code.
 
 ### Debugging and Troubleshooting
 
@@ -76,6 +78,8 @@ Queries, TODOs, Highlights, commented out code can also be styled to make it cle
 - <a href="https://github.com/ahmadawais/shades-of-purple-vscode" target="_blank">Shades of Purple Theme</a>
 
 # settings.json
+
+![Settings](settings.json)
 
 ```
 {
@@ -110,6 +114,50 @@ Queries, TODOs, Highlights, commented out code can also be styled to make it cle
   "workbench.iconTheme": "vscode-icons",
   "glassit.alpha": 230,
   "editor.guides.bracketPairs": "active",
+  "vscode-color-picker.languages": [
+    "bat",
+    "c",
+    "cpp",
+    "csharp",
+    "dockercompose",
+    "dockerfile",
+    "fsharp",
+    "git-commit",
+    "git-rebase",
+    "go",
+    "haml",
+    "html",
+    "java",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "latex",
+    "lua",
+    "makefile",
+    "markdown",
+    "pascal",
+    "perl",
+    "php",
+    "plaintext",
+    "powershell",
+    "python",
+    "ruby",
+    "rust",
+    "scss",
+    "sass",
+    "shellscript",
+    "sql",
+    "svelte",
+    "swift",
+    "typescript",
+    "typescriptreact",
+    "vb",
+    "vue",
+    "vue-html",
+    "xml",
+    "yaml"
+  ],
 
   // Formatter used globally in VSCode
   "editor.formatOnSave": true,
@@ -126,21 +174,27 @@ Queries, TODOs, Highlights, commented out code can also be styled to make it cle
   },
 
   // Better Comments settings
+  // ! Look at this!
+  // ? Double check this!
+  // / Does not belong!
+  // ed Educational purposes only!
+  // todo Work on this!
+  // * Highlight this!
   "better-comments.multilineComments": true,
   "better-comments.highlightPlainText": true,
   "better-comments.tags": [
     {
       "tag": "!",
-      "color": "#FF2D00",
+      "color": "#f2f2f2",
       "strikethrough": false,
       "underline": false,
-      "backgroundColor": "transparent",
+      "backgroundColor": "#AC042E",
       "bold": false,
       "italic": false
     },
     {
       "tag": "?",
-      "color": "#3498DB",
+      "color": "#71FBAA",
       "strikethrough": false,
       "underline": false,
       "backgroundColor": "transparent",
@@ -148,7 +202,7 @@ Queries, TODOs, Highlights, commented out code can also be styled to make it cle
       "italic": false
     },
     {
-      "tag": "//",
+      "tag": "/",
       "color": "#474747",
       "strikethrough": true,
       "underline": false,
@@ -157,8 +211,8 @@ Queries, TODOs, Highlights, commented out code can also be styled to make it cle
       "italic": false
     },
     {
-      "tag": "todo",
-      "color": "#FF8C00",
+      "tag": "ed",
+      "color": "#474747",
       "strikethrough": false,
       "underline": false,
       "backgroundColor": "transparent",
@@ -166,11 +220,20 @@ Queries, TODOs, Highlights, commented out code can also be styled to make it cle
       "italic": false
     },
     {
-      "tag": "*",
-      "color": "#98C379",
+      "tag": "todo",
+      "color": "#181817",
       "strikethrough": false,
       "underline": false,
-      "backgroundColor": "transparent",
+      "backgroundColor": "#F9FA19",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#f2f2f2",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#3A31D8",
       "bold": false,
       "italic": false
     }
