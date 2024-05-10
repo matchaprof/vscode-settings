@@ -30,6 +30,50 @@
   "workbench.iconTheme": "vscode-icons",
   "glassit.alpha": 230,
   "editor.guides.bracketPairs": "active",
+  "vscode-color-picker.languages": [
+    "bat",
+    "c",
+    "cpp",
+    "csharp",
+    "dockercompose",
+    "dockerfile",
+    "fsharp",
+    "git-commit",
+    "git-rebase",
+    "go",
+    "haml",
+    "html",
+    "java",
+    "javascript",
+    "javascriptreact",
+    "json",
+    "jsonc",
+    "latex",
+    "lua",
+    "makefile",
+    "markdown",
+    "pascal",
+    "perl",
+    "php",
+    "plaintext",
+    "powershell",
+    "python",
+    "ruby",
+    "rust",
+    "scss",
+    "sass",
+    "shellscript",
+    "sql",
+    "svelte",
+    "swift",
+    "typescript",
+    "typescriptreact",
+    "vb",
+    "vue",
+    "vue-html",
+    "xml",
+    "yaml"
+  ],
 
   // Formatter used globally in VSCode
   "editor.formatOnSave": true,
@@ -46,21 +90,27 @@
   },
 
   // Better Comments settings
+  // ! Look at this!
+  // ? Double check this!
+  // / Does not belong!
+  // ed Educational purposes only!
+  // todo Work on this!
+  // * Highlight this!
   "better-comments.multilineComments": true,
   "better-comments.highlightPlainText": true,
   "better-comments.tags": [
     {
       "tag": "!",
-      "color": "#FF2D00",
+      "color": "#f2f2f2",
       "strikethrough": false,
       "underline": false,
-      "backgroundColor": "transparent",
+      "backgroundColor": "#AC042E",
       "bold": false,
       "italic": false
     },
     {
       "tag": "?",
-      "color": "#3498DB",
+      "color": "#71FBAA",
       "strikethrough": false,
       "underline": false,
       "backgroundColor": "transparent",
@@ -68,7 +118,7 @@
       "italic": false
     },
     {
-      "tag": "//",
+      "tag": "/",
       "color": "#474747",
       "strikethrough": true,
       "underline": false,
@@ -77,8 +127,8 @@
       "italic": false
     },
     {
-      "tag": "todo",
-      "color": "#FF8C00",
+      "tag": "ed",
+      "color": "#474747",
       "strikethrough": false,
       "underline": false,
       "backgroundColor": "transparent",
@@ -86,14 +136,22 @@
       "italic": false
     },
     {
-      "tag": "*",
-      "color": "#98C379",
+      "tag": "todo",
+      "color": "#181817",
       "strikethrough": false,
       "underline": false,
-      "backgroundColor": "transparent",
+      "backgroundColor": "#F9FA19",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#f2f2f2",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#3A31D8",
       "bold": false,
       "italic": false
     }
   ]
 }
-
