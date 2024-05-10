@@ -1,6 +1,6 @@
 # My VSCode Settings
 
-Find my settings for VSCode below (some settings inspired by <a href="https://youtube.com/#AsmrProg" target="_blank">AsmrProg</a>)
+Find my settings for VSCode below!
 
 ## How it looks
 
@@ -30,6 +30,8 @@ Check my `settings.json` for compatibility using multiple formatters.
 
 - <a href="https://github.com/formulahendry/vscode-auto-rename-tag" target="_blank">Auto Rename Tag</a> <br>Automatically renames paired HTML/XML tag
 
+- <a href="https://github.com/xabikos/vscode-javascript" target="_blank">JavaScript (ES6) code snippets</a> <br>Code snippets for JavaScript in ES6 syntax (supports both JavaScript and TypeScript).
+
 - <a href="https://github.com/solnurkarim/HTML-to-CSS-autocompletion" target="_blank">HTML To CSS Autocompletion</a> <br>Provides completion suggestions for classes and ids from markup documents to stylesheets.
 
 - <a href="https://github.com/Cardinal90/multi-cursor-case-preserve" target="_blank">Multiple cursor case preserve</a> <br>Preserves case of selection when editing multiple cursors.
@@ -38,15 +40,20 @@ Check my `settings.json` for compatibility using multiple formatters.
 
 - <a href="https://github.com/oderwat/vscode-indent-rainbow" target="_blank">indent-rainbow</a> <br>Makes indentation easier to read (pairs nicely with `"editor.guides.bracketPairs": "active",` in ![settings.json](settings.json)).
 
+- <a href="https://github.com/aaron-bond/better-comments" target="_blank">Better Comments</a> <br>This extension will help you create more human-friendly comments in your code. <br>Alerts, 
+Queries, TODOs, Highlights, commented out code can also be styled to make it clear the code shouldn't be there, and more!
+
 - <a href="https://github.com/enyancc/vscode-ext-color-highlight" target="_blank">Color Highlight</a> <br>Styles CSS/Web colors found in your document.
 
 - <a href="https://github.com/streetsidesoftware/vscode-spell-checker" target="_blank">Code Spell Checker</a> <br>Spell checker to help catch common spelling errors in code
 
 ### Debugging and Troubleshooting
 
-- <a href="https://github.com/MicrosoftDocs/intellicode" target="_blank">Intellicode</a> <br>Allows you to see real-world examples of how other developers have used a given function via Github.
+- <a href="https://github.com/alefragnani/vscode-bookmarks" target="_blank">Bookmarks</a> <br>Mark lines and jump to them. Move between important positions easily and quickly.
 
 - <a href="https://github.com/usernamehw/vscode-error-lens" target="_blank">Error Lens</a> <br>Improve highlighting of errors, warnings and other language diagnostics.
+
+- <a href="https://github.com/MicrosoftDocs/intellicode" target="_blank">Intellicode</a> <br>Allows you to see real-world examples of how other developers have used a given function via Github.
 
 - <a href="https://github.com/kufii/CodeSnap" target="_blank">Codesnap</a> <br>Quickly take screenshots of snippets of code.
 
@@ -120,3 +127,7 @@ Check my `settings.json` for compatibility using multiple formatters.
   }
 }
 ```
+
+# Note
+
+Theming inspired by <a href="https://youtube.com/#AsmrProg" target="_blank">AsmrProg</a>
