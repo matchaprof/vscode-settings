@@ -9,9 +9,8 @@ Find my settings for VSCode below!
 # Font and Cursor
 
 Search for **"Font"** in VSCode settings and change the following:
-- Font Family: `'cascadia code'` (<a href="https://github.com/microsoft/cascadia-code" target="_blank">Download from Microsoft</a>)
+- Font Family: `"Monaspace Argon Var', monospace"` (<a href="https://monaspace.githubnext.com/#code-ligatures" target="_blank">Download from GitHub</a>)
 - Font Fize: `16`
-
 
 Search for **"Cursor"** in VSCode settings and change the following:
 - Cursor Style: `Line`
@@ -40,6 +39,8 @@ Check my `settings.json` for compatibility using multiple formatters.
 
 - <a href="https://github.com/aaron-bond/better-comments" target="_blank">Better Comments</a> <br>This extension will help you create more human-friendly comments in your code. <br>Alerts, 
 Queries, TODOs, Highlights, commented out code can also be styled to make it clear the code shouldn't be there, and more!
+
+- <a href="https://github.com/johnpapa/vscode-peacock" target="_blank">Peacock</a> <br>Subtly change the color of your workspace. Ideal when you have multiple VS Code instances.
 
 - <a href="https://github.com/enyancc/vscode-ext-color-highlight" target="_blank">Color Highlight</a> <br>Styles CSS/Web colors found in your document.
 
@@ -74,7 +75,7 @@ Queries, TODOs, Highlights, commented out code can also be styled to make it cle
 ### Themes
 - <a href="https://github.com/ayu-theme/vscode-ayu" target="_blank">Ayu Theme</a>
 - <a href="https://github.com/akamud/vscode-theme-onedark" target="_blank">Atom One Dark Theme</a>
-- <a href="https://github.com/guilhermerodz/omni-owl" target="_blank">Omini Owl Theme</a>
+- <a href="https://github.com/guilhermerodz/omni-owl" target="_blank">Omni Owl Theme</a>
 - <a href="https://github.com/ahmadawais/shades-of-purple-vscode" target="_blank">Shades of Purple Theme</a>
 
 # settings.json
@@ -84,7 +85,6 @@ Queries, TODOs, Highlights, commented out code can also be styled to make it cle
 ```
 {
   // Global settings
-  "editor.wordWrap": "on",
   "workbench.settings.applyToAllProfiles": [
     "editor.fontFamily",
     "editor.fontSize",
@@ -92,16 +92,17 @@ Queries, TODOs, Highlights, commented out code can also be styled to make it cle
   ],
   "liveServer.settings.donotShowInfoMsg": true,
   "cSpell.enabled": false,
+  "editor.wordWrap": "on",
   "editor.linkedEditing": true,
+  "editor.tabSize": 2,
 
   // Shows folder trees rather than compacting them inline
   "explorer.compactFolders": false,
 
   // Font Settings
   "editor.fontSize": 16,
-  "editor.fontFamily": "'cascadia code'",
-  // Other preferred fonts for my reference
-  // "editor.fontFamily": "Consolas, 'Courier New', monospace"
+  "editor.fontLigatures": "'calt', 'ss02', 'ss03', 'ss04', 'ss05', 'ss07', 'ss08', 'ss09', 'liga'",
+  "editor.fontFamily": "'Monaspace Argon Var', monospace",
 
   // Cursor Settings
   "editor.cursorWidth": 3,
@@ -158,6 +159,7 @@ Queries, TODOs, Highlights, commented out code can also be styled to make it cle
     "xml",
     "yaml"
   ],
+  "prettier.tabWidth": 2,
 
   // Formatter used globally in VSCode
   "editor.formatOnSave": true,
@@ -174,12 +176,12 @@ Queries, TODOs, Highlights, commented out code can also be styled to make it cle
   },
 
   // Better Comments settings
-  // ! Look at this!
-  // ? Double check this!
-  // / Does not belong!
-  // ed Educational purposes only!
-  // todo Work on this!
-  // * Highlight this!
+  //! Look at this!
+  //? Double check this!
+  /// Does not belong!
+  //ed Educational purposes only!
+  //todo Work on this! #38D44C #FFBE3B
+  //* Highlight this!
   "better-comments.multilineComments": true,
   "better-comments.highlightPlainText": true,
   "better-comments.tags": [
@@ -237,10 +239,63 @@ Queries, TODOs, Highlights, commented out code can also be styled to make it cle
       "bold": false,
       "italic": false
     }
+  ],
+
+  // Peacock Settings
+  "peacock.affectTitleBar": true,
+  "peacock.affectStatusBar": false,
+  "peacock.elementAdjustments": {
+    "activityBar": "lighten",
+    "statusBar": "none",
+    "titleBar": "none"
+  },
+  // plan to edit these colors
+  "peacock.favoriteColors": [
+    {
+      "name": "Stone",
+      "value": "#f2f2f2"
+    },
+    {
+      "name": "Angular Red",
+      "value": "#dd0531"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#61dafb"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Svelte Orange",
+      "value": "#ff3d00"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    }
   ]
 }
 ```
 
-# Note
+# Honorable Mentions
 
-Theming inspired by <a href="https://youtube.com/#AsmrProg" target="_blank">AsmrProg</a>
+### Font
+- Font Family: `"'Cascadia Code', monospace"` (<a href="https://github.com/microsoft/cascadia-code" target="_blank">Download from Microsoft</a>)
